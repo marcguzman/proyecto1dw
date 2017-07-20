@@ -49,15 +49,8 @@ section{
 footer .contenedor{
     text-align: left;
 }
+
 #copy{
     font-size: 20px;
 }
 
-#blog .reloj{
-    width: 100%;
-    padding: 20px;
-    font-size: 4em;
-    color: blue ;
-    text-align: center;
-    background: rgba(0,0,0,0.5)
-}

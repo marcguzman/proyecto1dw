@@ -12,15 +12,17 @@
         <link rel="stylesheet" href="css/menu.css">
         <link rel="stylesheet" href="css/banner.css">
         <link rel="stylesheet" href="js/funciones.js">
+        <script src="js/funciones.js"></script>
     </head>
     <body>
-    <header>
+   
+        <header>
         <div class="contenedor">
         <h1 class="icon-code">Desarollo WEB</h1>
             <input type="checkbox" id="menu-bar">
             <label  class="icon-menu" for="menu-bar"></label>
             <nav class="menu">
-                <a href=""> Inicio</a>
+                <a href="login.html"> Inicio</a>
                 <a href=""> Fibonacci </a>
                 <a href=""> Conteo de Caracteres </a>
                 <a href=""> Contact </a>
@@ -30,8 +32,7 @@
     </header>
         
     <main>
-        
-       
+    
         <section id="banner">
            <img src="img/banner.png"> 
             <div class="contenedor">
@@ -39,7 +40,13 @@
                 <p onclick="alert('Alerta Proyecto 1')">Leer Mas</p> 
             </div>
          
-            
+        <script class="reloj">
+            var fecha= new Date()
+            var horas= fecha.getHours()
+            var minutos = fecha.getMinutes()
+            var segundos = fecha.getSeconds()
+            document.write(horas + ":" + minutos + ":" + segundos)
+        </script>
             
         </section>
         <section id="bienvenidos">
@@ -82,7 +89,10 @@
              <div class="reloj">
              <p id="horas" class="horas"></p>
              </div>
-             <script src="js/funciones.js"></script>
+             
+        </section>
+        <section>
+
         </section>
         </main>
         <footer>
