@@ -1,6 +1,14 @@
 <!doctype html>
 <html>
+
 <head>
+<link rel="stylesheet" href="css/banner.css">
+<link rel="stylesheet" href="css/fontello.css">
+<link rel="stylesheet" href="css/estilos.css">
+<link rel="stylesheet" href="css/menu.css">
+<link rel="stylesheet" href="js/funciones.js">
+
+
 <meta charset="utf-8">
 <title>Conteo-char</title>
 </head>
@@ -13,14 +21,22 @@
 	}
 </script>
 
-<body>
-<br><br>
-Ingrese texto<br>
-<input type="text" id="texto" size="20"><br><br>
-<button type="button" onclick="caracteres()">Conteo</button><br>
+<body style="background-color:#6A8E23">
 
-Cantidad de caracteres:
-<p id="C2"></p>
+
+
+<br><br>
+<br>
+
+<label   for="menu-bar"> Ingrese texto : </label>
+
+<input type="text" id="texto" size="20">
+<button type="button" onclick="caracteres()">Conteo</button><br><br>
+
+  
+<font color="yellow">  Cantidad de caracteres: <label id="C2"></label >
+</font>
+
 
 </body>
 </html>
