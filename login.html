@@ -1,11 +1,41 @@
-<link rel="stylesheet" href="css/login.css">
-<div class="login-page">
-  <div class="form">
-    
-    <form class="login-form">
-      <input type="text" placeholder="username"/>
-      <input type="password" placeholder="password"/>
-      <a href="index.html"> Inicio</a>
-    </form>
-  </div>
-</div>
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="stylesheet" href="css/login.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+        function validateForm() {
+            var un = document.loginform.usr.value;
+            var pw = document.loginform.pword.value;
+            var user = "grupo5"; 
+            var pass = "dw";
+            if ((un == user) && (pw == pass)) {
+                alert ("Login exitoso ");    
+                window.location = "index.html";
+                return false;
+            }
+        else {
+            alert ("Login incorrecto, por favor verifique las credenciales");
+        }
+      }
+    </script>
+    </head>
+    <body>
+        
+        <div class="login-page">
+        <div class="form">
+            <form class="login-form" name="loginform">
+                <input type="text"  name="usr" placeholder="username"/>
+                <input type="password"  name="pword" placeholder="password"/>
+                <input class="button" type="button" value="Login" onClick="validateForm();" />
+            </form>
+        </div>
+        </div>        
+    </body>
+</html>
