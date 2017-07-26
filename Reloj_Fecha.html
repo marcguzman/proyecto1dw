@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Reloj</title>
+</head>
+
+
+<script language="JavaScript"> 
+function Reloj(){ 
+	
+   	ahora = new Date() 
+	fecha = ahora.toLocaleDateString()
+   	hora = ahora.getHours() 
+   	minuto = ahora.getMinutes() 
+   	segundo = ahora.getSeconds() 
+	var cero_sg = ""
+	var cero_mi = ""
+	var cero_hr = ""
+	
+	hora_length = new String(hora)
+	if (hora_length.length==1)
+		{
+			<!--hora = "0"+segundo-->
+			cero_hr = "0"
+		}else{cero_hr = ""}
+	
+	minuto_length = new String(minuto)
+	if (minuto_length.length==1)
+		{
+			<!-- hora = "0"+minuto -->
+			cero_mi = "0"
+		}else{cero_mi = ""}
+	
+	segundo_length = new String(segundo)
+	if (segundo_length.length==1)
+		{
+			<!-- segundo = "0"+hora -->
+			cero_sg = "0"
+		}else{cero_sg = ""}
+
+   	//Tiempo = fecha + "  " hora + " : " + minuto + " : " + segundo 
+
+	
+	Tiempo = cero_hr+hora + " : " + cero_mi+minuto + " : " + cero_sg+segundo 
+   	document._reloj.reloj.value = fecha + "  //  " + Tiempo 
+
+	setTimeout("Reloj()",1000) 
+} 
+</script> 
+
+
+<body onload="Reloj()"> 
+
+Fecha/Hora..:
+<form name="_reloj"> 
+<input type="text" name="reloj" size="30"> 
+</form> 
+
+</body>
+</html>
