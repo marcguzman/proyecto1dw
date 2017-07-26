@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+
+
+<meta charset="utf-8">
+<title>Fibonacci</title>
+</head>
+
+<link rel="stylesheet" href="css/fibonacci.css">
+
+<script type="text/javascript"> 
+function Fibo (){
+var Arreglo,text;
+	Arreglo = []
+	
+final = document.getElementById("texto").value	
+var i=0;
+	var a1=0,a2=0;
+	var fb=0;
+	for (i=0;i<final;i++) { 
+		if (i==1)
+			{a1=1
+			a2=0
+			fb=a1+a2}
+		else
+			{fb = a2 + a1;	
+			 a2=a1
+			 a1=fb;
+			 }
+		
+		Arreglo.push(fb);
+	//	document.writeln(fb);
+		
+	}
+	text = "<ul>";
+	for (i = 0; i < Arreglo.length; i++) {
+    text += "<li>" + Arreglo[i] + "</li>";
+	}
+	text += "</ul>";
+document.getElementById("TX").innerHTML = text;
+	
+}
+</script>
+
+
+<body>
+
+
+<div>
+ <img   src="img/exito.jpg">        
+</div>
+
+
+ <div class="espacio">
+    <h2>FUNCIÓN FIBONACCI</h1>
+
+Ingrese total de valores a mostrar<br>
+<input type="text" id="texto" placeholder="Ingrese numero" size="20"><br><br>
+<button class="formulario" type="button" onclick="Fibo()">Mostrar</button><br><br>
+ 
+    
+Funcion Fibonacci
+<p id="TX"></p>
+
+</div>
+</body>
+</html>
