@@ -1,26 +1,46 @@
-P  {
- font-size : 12pt;
- font-family : arial,helvetica;
- font-weight : normal;
+img {
+    
+    border: 2px solid #000;
+    width:60%;
+    height: 60%;
+    border-radius: 10px;
+    padding:10px        
+        
 }
 
-H1  {
+
+
+H2 { 
+ background: white;
  font-size : 36pt;
- font-family : verdana,arial;
+ color: brown;
+ width:100%; 
+ font-family : sans-serifarial;
  text-decoration : underline;
- text-align : center;
- background-color : Teal;
+ text-align : left;
+    
 }
 
-TD  {
- font-size : 10pt;
- font-family : verdana,arial;
- text-align : center;
- background-color : 666666;
+.espacio{   
+position: absolute;
+    left: 70px;
+    top:30px;    
 }
+
+
+
 
 BODY  {
- background-color : skyblue;
+
  font-family : arial;
- color : White;
+ color : black;    
+ font-weight:bolder;
+ font-size: 20px;
+  
+}
+
+.formulario{
+    padding: 5px;
+    border:2px solid #000;
+    border-radius: 5px;
 }
