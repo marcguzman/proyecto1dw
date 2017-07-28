@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>Fecha y Hora Dinamica</title>
+<link rel="stylesheet" href="css/Reloj_Fecha.css">
+
+</head>
+
+
+<script language="JavaScript"> 
+function Reloj(){ 
+	
+   	ahora = new Date() 
+	fecha = ahora.toLocaleDateString()
+   	hora = ahora.getHours() 
+   	minuto = ahora.getMinutes() 
+   	segundo = ahora.getSeconds() 
+	var cero_sg = ""
+	var cero_mi = ""
+	var cero_hr = ""
+	
+	hora_length = new String(hora)
+	if (hora_length.length==1)
+		{
+			<!--hora = "0"+segundo-->
+                        <!--hora = "0"+segundo-->
+			cero_hr = "0"
+		}else{cero_hr = ""}
+	
+	minuto_length = new String(minuto)
+	if (minuto_length.length==1)
+		{
+			<!-- hora = "0"+minuto -->
+			cero_mi = "0"
+		}else{cero_mi = ""}
+	
+	segundo_length = new String(segundo)
+	if (segundo_length.length==1)
+		{
+			<!-- segundo = "0"+hora -->
+			cero_sg = "0"
+		}else{cero_sg = ""}
+
+   	//Tiempo = fecha + "  " hora + " : " + minuto + " : " + segundo 
+
+	
+	Tiempo = cero_hr+hora + " : " + cero_mi+minuto + " : " + cero_sg+segundo 
+   	document._reloj.reloj.value = fecha + "  //  " + Tiempo 
+
+	setTimeout("Reloj()",1000) 
+} 
+</script> 
+
+
+<body onload="Reloj()"> 
+
+<!-- Menú de navegación del sitio -->
+<ul class="navbar">
+  <li><a href="index.html">Inicio</a>
+</ul>
+
+<p>¡Bienvenido al Proyecto #1 del curso DesarrolloWeb!
+<h1>Fecha y Hora Dinamicas...</h1>
+
+<form name="_reloj"> 
+<input type="text" name="reloj" size="30"> 
+</form> 
+
+</body>
+</html>

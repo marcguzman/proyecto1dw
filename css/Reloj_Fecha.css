@@ -1,0 +1,16 @@
+  body {
+	
+	padding-left: 11em;
+	
+    color: black;
+    background-color: #d8da3d }
+	
+ul.navbar {
+    position: absolute;
+    top: 2em;
+    left: 1em;
+    width: 9em }
+	
+ h1{
+	font-family: "Times New Roman", Geneva, Helvetica, Arial,
+    SunSans-Regular, sans-serif }

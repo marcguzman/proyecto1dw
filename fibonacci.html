@@ -1,11 +1,13 @@
 <!doctype html>
 <html>
 <head>
-<link rel="stylesheet" href="css/fibonacci.css">
+
+
 <meta charset="utf-8">
 <title>Fibonacci</title>
 </head>
 
+<link rel="stylesheet" href="css/fibonacci.css">
 
 <script type="text/javascript"> 
 function Fibo (){
@@ -31,6 +33,7 @@ var i=0;
 	//	document.writeln(fb);
 		
 	}
+    
 	text = "<ul>";
 	for (i = 0; i < Arreglo.length; i++) {
     text += "<li>" + Arreglo[i] + "</li>";
@@ -43,13 +46,30 @@ document.getElementById("TX").innerHTML = text;
 
 
 <body>
-Ingrese total de valores a mostrar<br>
-<input type="text" id="texto" size="20"><br>
-<button type="button" onclick="Fibo()">Mostrar</button><br><br>
 
+
+<div>
+ <img   src="img/exito.jpg">        
+</div>
+
+
+ <div class="espacio">
+    <h2>FUNCIÓN FIBONACCI</h1>
+
+Ingrese total de valores a mostrar<br>
+<input type="text" id="texto" placeholder="Ingrese numero" size="20"><br><br>
+<button class="formulario" type="button" onclick="Fibo()">Mostrar</button><br><br>
+ 
+ 
+       
 Funcion Fibonacci
 <p id="TX"></p>
 
+</div>
+
+<div>
+<a href="index.html">INICIO</a>
+</div>
 
 </body>
 </html>
