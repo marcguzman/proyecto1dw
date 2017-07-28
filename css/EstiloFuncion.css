@@ -1,0 +1,28 @@
+
+html{overflow-y:scroll;}
+
+body{
+    margin:0; 
+    padding:0; 
+    font-size:12px; 
+    font-family:verdana, Arial, Helvetica, sans-serif; color:#FFFFFF; 
+    background-color:#29313C;
+}
+
+form{
+    margin:0; 
+    padding:0; 
+    border:none; 
+    align-items: center;
+}
+
+div{
+    align-content: center;
+    align-items: center;
+    
+}
+head{
+    font-size: 16;
+    color: white;
+    align-items: center;
+}
