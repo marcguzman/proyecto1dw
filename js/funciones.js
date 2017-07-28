@@ -8,3 +8,17 @@ function fncSumar(){
         caja["resultado"].value=numero1+numero2;
     }
 }
+
+
+function ConfirmDemo() {
+//Ingresamos un mensaje a mostrar
+var mensaje = confirm("¿Te gusta el curso de Desarrollo Web?");
+//Detectamos si el usuario acepto el mensaje
+if (mensaje) {
+alert("¡Que bueno que te gusta!!!");
+}
+//Detectamos si el usuario denegó el mensaje
+else {
+alert(":( ");
+}
+}

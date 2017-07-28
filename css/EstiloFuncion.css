@@ -19,10 +19,15 @@ form{
 div{
     align-content: center;
     align-items: center;
+    font-size:150%;
     
 }
 head{
-    font-size: 16;
+    font-size: 100%;
     color: white;
     align-items: center;
+}
+
+a{
+    font-size: 300%;
 }
