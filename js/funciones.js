@@ -22,3 +22,9 @@ else {
 alert(":( ");
 }
 }
+
+function myFunction() {    
+    var str = document.getElementById("texto").value;
+    var res = str.split("");
+    document.getElementById("demo").innerHTML = res;
+}
