@@ -1,4 +1,4 @@
-
+﻿
 function fncSumar(){
     caja=document.forms["sumar"].elements;
     var numero1 = Number(caja["numero1"].value);
@@ -62,4 +62,21 @@ var i=0;
 	text += "</ul>";
 document.getElementById("TX").innerHTML = text;
 	
+}
+
+
+
+function retornaNA(){
+  	var navegador = navigator.userAgent;
+  	if (navigator.userAgent.indexOf('MSIE') !=-1) {
+    window.alert("Explorer"); 
+  } else if (navigator.userAgent.indexOf('Firefox') !=-1) {
+    window.alert("Firefox"); 
+  } else if (navigator.userAgent.indexOf('Chrome') !=-1) {
+    window.alert("GoogleChrome");
+  } else if (navigator.userAgent.indexOf('Opera') !=-1) {
+    window.alert("Opera");
+  } else {
+    window.alert("Saber");
+  }
 }
